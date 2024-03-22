@@ -1,0 +1,360 @@
+html{
+  scroll-behavior: smooth; /* a태그 클릭시 섹션 부드럽게 넘어가기 */
+}
+.app{
+  width: 100%;
+}
+
+#header {
+  position: fixed;
+  align-items: center; 
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 60px; 
+  background-color: white;
+  color: #0F4B43;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e3fd; 
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.section_content{
+  width: 90%;
+  margin: 0 auto;
+}
+.txt-invisible{
+  display: none;
+}
+
+nav {
+  margin-right: 20px; 
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+
+}
+
+li{
+  margin-right: 10px;
+}
+
+
+/* section1 이미지  */
+.cont-intro {
+  margin: 150px 0 350px 0;
+  display: flex;
+}
+.cont-intro > img{
+  width: 300px;
+  height: 400px;
+  margin-left: 3%;
+
+}
+.text-info{
+  display: flex;
+  flex-direction: column;
+}
+.txt-title{
+  width: 900px;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-family: "Black Han Sans";
+  font-weight: 400;
+  font-size: 50px;
+  color: #0F4B43;
+  font-style: normal;
+}
+
+
+/*more 버튼*/
+.btn-more{
+  transition: opacity 0.5s ease; /* opacity 속성에 대한 트랜지션 효과 설정 */
+  border: 1px solid #0F4B43;
+  color:#0F4B43;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: 70%;
+  font-family: "Black Han Sans";
+  font-weight: 400;
+}
+
+
+/* section2 - about */
+
+
+.section-about{
+  background-color: #EFE7E1;
+  color: #0F4B43;
+  font-family: sans-serif;
+  position: relative;
+  top: 100px;
+  padding-top: 40px;
+  scroll-margin-top: 80px;
+  height: 100vh;
+}
+
+#about_h2{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about{
+  font-family: "Black Han Sans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.about_content{
+  display: flex;
+  height: fit-content;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+
+#about_image{
+  width: 300px;
+  height: 400px;
+}
+
+.about_me{
+  margin-left: 15%;
+  width: 500px;
+
+}
+#about_me{
+  display: flex;
+  flex-direction: column;
+}
+
+#chapter{
+font-size: 20px;
+font-weight: 600;
+}
+
+strong{
+  color: #45A216;
+}
+
+#profile{
+  width: fit-content;
+  border: 1px solid #e0e3fd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+}
+#skill{
+  width: fit-content;
+  border: 1px solid #e0e3fd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+/* section3 - interest */
+.section-favorite{
+  background-color: #ffffff;
+  color: #0F4B43;
+  font-family: sans-serif;
+  position: relative;
+  top: 130px;
+  scroll-margin-top: 100px;
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.sub-title{
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  right: 30px;
+}
+
+.article-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto; 
+  margin-top: 10px;
+}
+.box-favorite{
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+}
+.txt-favorite{
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Black Han Sans";
+  font-weight: 200;
+  font-size: 20px;
+  font-style: normal;
+}
+#longboard{
+position: relative;
+bottom: 7px;
+}
+  
+  .black-han sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  /* section4 - project */
+
+  .section-project{
+    background-color: #EFE7E1;
+    color: #0F4B43;
+    font-family: sans-serif;
+    position: relative;
+    top: 100px;
+    scroll-margin-top: 100px;
+    /* margin-top: 80px; */
+    height: 100vh;
+    padding-top: 40px;
+    
+  }
+.about_project{
+  font-family: "Black Han Sans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+  .box-project{
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+  }
+
+#all_in_one{
+height: 140px;
+  }
+.txt-project > h3{
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#allinone{
+  position: relative;
+  top: 1px;
+}
+
+  /* 모달 스타일 */
+.modal {
+
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: 15% auto; 
+  padding: 20px;
+  background-color: #fefefe; 
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#modal-title{
+  font-family: "Black Han Sans";
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#modal-image{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.close {
+  color: #aaa;
+  float: right; 
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+  right: 100px;
+}
+
+.close:hover,
+.close:focus {
+  color: red; 
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+/* bottom */
+.box-footer{
+  position: relative;
+  top: 100px;
+
+}
+
+.link-sns li a img{ 
+ width: 50px;
+ height: 50px;
+}
+
+.section-contact{
+  background-color: #ffffff;
+  color: #0F4B43;
+  font-family: sans-serif;
+  position: relative;
+  top: 100px;
+  padding-top: 40px;
+  scroll-margin-top: 80px;
+  height: 100vh;
+}
+
+.link-sns{
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  right: 80px;
+}
+
+.link-sns li{
+  margin-right: 15px;
+}
+.contact_content{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+.contact_content p{
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 10%;
+  font-family: "Black Han Sans";
+  font-size: 20px;
+}

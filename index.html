@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>허민영</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden">
+    <div class="app">
+        <section class="section-intro">
+            <header id="header">
+                <h1 class="txt-invisible">Portfolio</h1>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#about" class="list-link">About</a></li>
+                        <li><a href="#favorite" class="list-link">Favorite</a></li>
+                        <li><a href="#project" class="list-link">Project</a></li>
+                        <li><a href="#contact" class="list-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="bar-bg">
+                    <span class="bar-ing"></span>
+                </div>
+            </header>
+            <div class="section_content">
+                <div class="cont-intro">
+                    <a name="info"></a>
+                    <img id="section1_1" src="./src/images/section1_2.jpg" alt="프로필 이미지" />
+                    <img id="section1_1" src="./src/images/section1_3.png" alt="프로필 이미지" />
+                    <div class="text-info">
+                        <p class="txt-title"></p>
+
+                        <a href="#about" class="btn-more" style="opacity: 0;">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about" id="about">
+            <a name="about"></a>
+            <div class="section_content">
+                <div id="about_h2">
+                    <h2 class="about">About.Me...💚</h2>
+                </div>
+                <div class="about_content">
+                    <div id="about_image">
+                        <img src="./src/images/My_image.png" alt="프로필 사진" />
+                    </div>
+                    <div class="about_me">
+                        <p id="chapter">Profile🦦</p>
+                        <div id="about_me">
+                            <div id="profile">
+                                <p>이름 : 허민영</p>
+                                <p>나이 : 24 </p>
+                                <p> 생년월일 : 2001.10.30</p>
+                                <p>전화번호 : 010 - 4799 - 5438</p>
+                                <p>이메일 : gjalsdud1030@naver.com</p>
+                            </div>
+                            <p id="chapter">Skill🛠️</p>
+                            <div id="profile">
+                                <strong>
+                                    <p>할 수 있어요🍀</p>
+                                </strong>
+                                <p>HTML, CSS, JavaScript, React, Kotlin</p>
+                                <p>Java, C, JSP, Python</p>
+                                <br />
+                                <strong>
+                                    <p>공부하고 있는 중이에요🍀</p>
+                                </strong>
+                                <p>Spring</p>
+                                <br />
+                                <strong>
+                                    <p>관심이 있어요🍀</p>
+                                </strong>
+                                <p>대용량 처리 시스템</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-favorite" id="favorite">
+            <a name="favorite"></a>
+            <div class="section_content">
+                <div id="about_h2">
+                    <h2 class="about">Favorite...💚</h2>
+                    <p class="sub-title">제가 좋아하는 것들은요..</p>
+                </div>
+                <div class="article-wrap">
+
+
+                    <article class="box-favorite">
+                        <div>
+                            <img class="img-favorite" src="./src/images/favorite_1.jpg" alt="첫번째 프로젝트 이미지" />
+                            <button class="btn-detail" type="button"></button>
+                        </div>
+                        <div class="txt-favorite">
+                            <h3>여행을 좋아해요</h3>
+                        </div>
+                    </article>
+
+                    <article class="box-favorite">
+                        <div>
+                            <img class="img-favorite" src="./src/images/favorite_2.png" alt="두번째 프로젝트 이미지" />
+                            <button class="btn-detail" type="button"></button>
+
+                        </div>
+                        <div class="txt-favorite">
+                            <h3>먹는 것을 좋아해요</h3>
+                        </div>
+                    </article>
+
+                    <article class="box-favorite">
+                        <div>
+                            <img class="img-favorite" src="./src/images/favorite_3.png" alt="두번째 프로젝트 이미지" />
+                            <button class="btn-detail" type="button"></button>
+
+                        </div>
+                        <div class="txt-favorite" id="longboard">
+                            <h3>롱보드를 타는 것을 좋아해요</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="section-project" id="project">
+        <a name="project"></a>
+        <div class="section_content">
+            <div id="about_h2">
+                <h2 class="about_project">Project...💚</h2>
+                <p class="sub-title">지금까지 한 프로젝트는요..</p>
+            </div>
+            <div class="article-wrap">
+
+                <div id="modal" class="modal">
+                    <span id="close-button" class="close">&times;</span>
+                    <div class="modal-content">
+                        <h2 id="modal-title"></h2>
+                        <img id="modal-image" src="" alt="프로젝트 이미지">
+                        <p id="modal-content"></p>
+                    </div>
+                </div>
+
+                <article class="box-project">
+                    <div>
+                        <img class="img-project" src="./src/images/project_1.png" alt="첫번째 프로젝트 이미지" />
+                        <button class="btn-detail" type="button"></button>
+                    </div>
+                    <div class="txt-project">
+                        <h3>미디어쿼리와<br /> 바닐라자바스크립트로 '토끼 유형 테스트' 만들기</h3>
+                        <p>Stack: HTML, CSS, JavaScript</p>
+                    </div>
+                </article>
+
+                <article class="box-project">
+                    <div>
+                        <img class="img-project" id = "all_in_one" src="./src/images/project_2.png" alt="두번째 프로젝트 이미지" />
+                        <button class="btn-detail" type="button"></button>
+
+                    </div>
+                    <div class="txt-project" id="allinone">
+                        <h3>한방에 모든 것을,<br /> 올 인원(all in one) 스터디 웹 플랫폼</h3>
+                        <p>Stack: React</p>
+                    </div>
+                </article>
+
+                <article class="box-project">
+                    <div>
+                        <img class="img-project" src="./src/images/project_3.png" alt="두번째 프로젝트 이미지" />
+                        <button class="btn-detail" type="button"></button>
+
+                    </div>
+                    <div class="txt-project">
+                        <h3>1인 가구를 위한 웹 서비스 Whole-ro</h3>
+                        <p>Stack: JSP, Java, MyBatis</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <hr />
+    <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+            <section class="section-contact" id="contact">
+                <a name="about"></a>
+                <div class="section_content">
+                    <div id="about_h2">
+                        <h2 class="about">Contact...💚</h2>
+                    </div>
+                    <div class="contact_content">
+                        <p>🌊해달은 잠을 잘 때 친구와 손을 잡고 잔다고 합니다🦦 <br/>
+                            🌊해달처럼 협력적인 개발자가 되도록 노력하겠습니다🦦</p>
+                        <ul class="link-sns">
+                            <li>
+                                <img src="./src/images/mygithub.png" width="300px" height="200px" />
+                            </li>
+                            <li>
+                                <img src="./src/images/haedal.jpg" width="300px" height="200px" />
+                            </li>
+                        </ul>
+                       
+                        <ul class="link-sns">
+                            <li>
+                                <a href="https://github.com/MinCodeHub" target="_blank"><img class="github"
+                                        src="./src/images/github_logo.png" alt="깃허브 주소" /></a>
+                            </li>
+                            <li>
+                                <a href="https://dragonair148.tistory.com/#google_vignette" target="_blank"><img
+                                        class="img-tistory" src="./src/images/tistory_logo.png" alt="블로그 주소" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
