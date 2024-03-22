@@ -57,7 +57,7 @@ li{
 .text-info{
   display: flex;
   flex-direction: column;
-}
+} 
 .txt-title{
   width: 900px;
   margin-left: 10%;
